@@ -54,4 +54,9 @@
         margin-top: 0;
         width: 50%;
     }
+
+    .create:hover{
+        background-color: rgb(189, 59, 240);
+        transition: 0.5s;
+    }
 }
