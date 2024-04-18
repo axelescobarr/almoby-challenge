@@ -1,0 +1,128 @@
+/* NavBar.module.css */
+.navContainer {
+    background: linear-gradient(90deg, rgba(98, 88, 235, 1) 0%, rgba(187, 183, 231, 1) 100%);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.title {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+}
+
+.button {
+    margin-right: 0.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+.menuOpen {
+    background-color: #BBB7E7;
+    width: 40%;
+    height: 100vh;
+    transition: width 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh;
+}
+
+.menuClose {
+    background-color: #BBB7E7;
+    width: 0;
+    height: 100vh;
+    transition: width 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 0.8rem 0.3rem;
+    transition: opacity 0.6s ease; 
+    opacity: 1; 
+}
+
+.linkClose {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 0.8rem 0.3rem;
+    transition: opacity 0.4s ease; 
+    opacity: 0; 
+    pointer-events: none;
+}
+
+
+.link:last-child {
+    background-color: #473BF0;
+    /* margin: 0 auto; */
+    padding: 0.5rem 1.3rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s; 
+    color: aliceblue;
+}
+
+.linkClose:last-child {
+    background-color: transparent; 
+    margin: 0 auto;
+    padding: 0.5rem 1.3rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: background-color 0.4s; 
+    color: aliceblue;
+}
+
+/*Estilos de la navbar para cuando es un desktop*/
+
+.linksContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+}
+
+.link{
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media (min-width: 769px) {
+    .navContainer {
+      height: 15vh;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .link{
+        font-size: 1.2rem;
+    }
+
+    .link:last-child {
+        width: 20%;
+        height: 4vh;
+        color: aliceblue;
+    }
+  }
+

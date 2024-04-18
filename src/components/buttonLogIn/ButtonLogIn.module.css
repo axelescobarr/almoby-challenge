@@ -1,0 +1,25 @@
+.btn{
+    background-color: #473BF0;
+    text-decoration: none;
+    color: #FFF;
+    width: 40%;
+    margin-left: 30%;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 769px) {
+    .btn{
+        width: 20%;
+        margin-left: 5%;
+        padding-top: 1rem; 
+        padding-bottom: 1rem;
+    }
+}
