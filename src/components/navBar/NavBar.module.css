@@ -127,19 +127,20 @@
         width: 25%;
         height: 4vh;
         color: aliceblue;
-
+        padding: 0.5rem 0;
     }
 
     .link:last-child:hover{
         background-color: rgb(189, 59, 240);
         transition: 0.5s;
+        padding: 0;
   }
 
-  .link:hover{
-    background-color: rgb(189, 59, 240);
-    padding: 0.5rem 1rem;
-    transition: 0.5s;
-    border-radius: 0.5rem;
+    .link:hover{
+        background-color: rgb(189, 59, 240);
+        padding: 0.5rem 1rem;
+        transition: 0.5s;
+        border-radius: 0.5rem;
   }
 }
 
